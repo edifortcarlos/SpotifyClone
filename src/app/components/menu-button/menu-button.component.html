@@ -1,0 +1,10 @@
+<!-- Instalar o fontawesome npm i @fortawesome/angular-fontawesome -->
+<!-- Instalar o fontawesome npm i @fortawesome/fontawesome-svg-core -->
+<!-- Instalar o fontawesome npm i @fortawesome/free-solid-svg-icons -->
+
+<button type="button" [class.selected]="selected == true" (click)="onClick()">
+    <ng-content></ng-content>
+    <span>
+        {{description}}
+    </span>
+</button>
