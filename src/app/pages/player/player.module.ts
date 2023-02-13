@@ -9,6 +9,11 @@ import { UserFooterComponent } from '../../components/user-footer/user-footer.co
 import { HomeComponent } from '../home/home.component';
 import { TopArtistComponent } from '../../components/top-artist/top-artist.component';
 import { RightPanelComponent } from '../../components/right-panel/right-panel.component';
+import { RecentSearchComponent } from '../../components/recent-search/recent-search.component';
+import { FormsModule } from '@angular/forms';
+import { TopArtistsComponent } from '../../components/top-artists/top-artists.component';
+import { ArtistItemImgComponent } from '../../components/artist-item-img/artist-item-img.component';
+import { PlayerCardComponent } from '../../components/player-card/player-card.component';
 
 
 const playerRoutes: Routes = [
@@ -28,6 +33,7 @@ const playerRoutes: Routes = [
     imports: [
         CommonModule,
         FontAwesomeModule,
+        FormsModule,
         RouterModule.forChild(playerRoutes)
     ],
     declarations: [
@@ -37,7 +43,11 @@ const playerRoutes: Routes = [
         UserFooterComponent,
         HomeComponent,
         TopArtistComponent,
-        RightPanelComponent
+        RightPanelComponent,
+        RecentSearchComponent,
+        TopArtistsComponent,
+        ArtistItemImgComponent,
+        PlayerCardComponent
     ],
     providers: [],
 })
