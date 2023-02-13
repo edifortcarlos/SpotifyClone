@@ -16,7 +16,6 @@ export class RecentSearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
   setSearch(searchText: string) {
